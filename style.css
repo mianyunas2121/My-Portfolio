@@ -1,0 +1,156 @@
+@import 'utilites.css';
+:root{
+    --primary : #3dcfd3;
+    --dark : #161616;
+    --pure : #FFFFFF;
+    --ternary : #898989;
+    --light : #f2f2f2;
+    --secondry : #070606;
+}
+body{
+    font-family: 'Poppins', sans-serif; 
+}
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+-webkit-font-smoothing : antialiased;
+}
+
+header{
+    background: var(--dark);
+    height: 850px;
+    clip-path: polygon(0 0 ,100% 0,100% 100%, 70% 87%, 0 100%);
+}
+.container{
+    max-width:1152px;
+    padding:0 15px;
+    margin:0  auto ;
+}
+
+header nav .left a {
+    color : var(--pure);
+    text-decoration: none ;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition:all .3s ease;
+ -webkit-transition:all .3s ease;
+-moz-transition:all .3s ease;
+-ms-transition:all .3s ease;
+-o-transition:all .3s ease;
+}
+header nav .left a:hover{
+color : var(--primary);
+}
+header nav{
+    padding :2rem 0;
+}
+header nav .branding{
+    margin-right: 5rem;
+    
+}
+section{
+    padding: 6rem 0;
+}
+section .about .about-me-img{
+ height: 450px;   
+}
+section .flex-1 h1{
+    margin-bottom: 5rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section .flex-1 h1 span{
+    color: var(--primary);
+}
+section .flex-1 h3{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+section .flex-1 p{
+    font-family: 'lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.9;
+    margin-bottom: 2rem;
+}
+section .flex-1 .social a{
+     
+    align-items : center ;
+   justify-content : center;
+   width: 35px;
+   height: 15px;
+   border-radius: 50%;
+   -webkit-border-radius:50%;
+   -moz-border-radius:50%;
+   -ms-border-radius:50%;
+   -o-border-radius:50%;
+   margin-right: 0.6rem; 
+    transition:all .3s ease;
+
+  }
+  section .flex-1 .social a :hover{
+    background : var(--primary);
+  }
+  section .flex-1 .social a img{
+    width: 10%;
+    height:10%;
+    padding: 0.6rem;
+
+  }
+
+.section-heading{
+    color: var(--secondry);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+.section-heading span{
+    color: var(--primary);
+}
+.section-heading + p{
+    color: var(--ternary);
+font-family: 'lato',sans-serif;
+margin-bottom: 8rem;
+text-align: center;
+}
+section.service{
+    background:var(--light);
+}
+section.service .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   grid-column-gap: 2rem;
+   grid-row-gap: 6rem;
+
+}
+section.service .card-wrapper .card{
+    background: var(--pure);
+    padding: 3rem 2rem;
+    position: relative;
+    padding-top: 5rem;
+    transition: all .3s ease;
+}
+section.service .card-wrapper .card img{
+position: absolute;
+top: -3rem;
+left: 50%;
+transform: translateX(-50%);
+border-radius: 6px 12px;
+}
+section.service .card-wrapper .card h2{
+font-weight: 400;
+font-size: 1.2rem;
+margin-bottom: 0.5rem;
+}
+section.service .card-wrapper .card p{
+    font-family: 'lato',sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+section.service .card-wrapper .card:hover{
+    background: var(--dark);
+
+}
+section.service .card-wrapper .card:hover h2,section.service .card-wrapper .card:hover p{
+    color: var(--pure);
+}
